@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/e22366414e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="top-section" id="top-section">
+            <div class="song-looping-btn button" id="song-looping-btn"><i class="fa-solid fa-repeat"></i></div>
+            <div class="heading"><i class="fa-solid fa-music"></i> Music Player</div>
+            <div class="song-list-btn button" id="song-list-btn"><i class="fa-solid fa-list"></i></div>
+        </div>
+        <div class="music_poster" id="music_poster"><img src="mypic.png" alt="img"> <span id="song_name" style="font-size: 22px;margin-top: 40px;"> song_name</span></div>
+        <!-- <div class="audio">
+            <audio controls>
+                <source src="Lashkare_192(PaglaSongs).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div> -->
+        <!-- <div class="video">
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
+        </div> -->
+        <!-- Add this inside the <body> tag, after the action_buttons div -->
+        <!-- Add this inside the body tag, after the action_buttons div -->
+        <!-- Add this inside the body tag, after the action_buttons div -->
+        <div class="progress_container">
+            <div class="timing">
+                <div id="current_time">0:00</div>
+                <div id="song_duration">0:00</div>
+            </div>
+            <input type="range" id="progress_bar" value="0" step="0.01">
+
+        </div>
+
+
+
+        <div class="action_buttons" id="action_buttons">
+
+            <!-- <div class="pause_button" id="pause_button"><i class="fa-solid fa-pause"></i></div> -->
+
+            <div class="prev_button button" id="prev_button"><i class="fa-solid fa-backward"></i></div>
+            <div class="backward_button button" id="backward_button"><i class="fa-solid fa-angles-left"></i></div>
+            <div class="play_button button" id="play_button"><i class="fa-solid fa-play"></i></div>
+            <div class="forward_button button" id="forward_button"><i class="fa-solid fa-angles-right"></i></div>
+            <div class="next_button button" id="next_button"><i class="fa-solid fa-forward"></i></div>
+
+        </div>
+
+        <div class="song_list">
+            <ul id="song_List">
+                <li data-src="Abrar’S-Entry-Jamal-Kudu(PaglaSongs).mp3">Song 0 (Lashkare_192(PaglaSongs).mp3)</li>
+                <li data-src="Lashkare_192(PaglaSongs).mp3">Song 1 (Lashkare_192(PaglaSongs).mp3)</li>
+                <li data-src="Arjan-Vailly(PaglaSongs).mp3">Song 2 (Arjan-Vailly(PaglaSongs).mp3)</li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

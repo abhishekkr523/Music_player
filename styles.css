@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#9ca3ff 0%, #fd878d 90%);
+    /* box-shadow: 0px, 6px, 15px rgba(0,0,0,0.342); */
+    /* padding: 15%; */
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-section {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.heading {
+    font-size: 25px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.music_poster {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* box-shadow: 0px, 6px, 15px rgba(0,0,0,0.342); */
+}
+
+img {
+    height: 60vh;
+    width: 60vw;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #ffffff, 0 0 2px #fff, 13px 23px 20px #e6f6ff;
+}
+
+#song-name {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+span{
+    font-size: 18px;
+    margin-top: 25px;
+}
+.audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    background-color: aqua;
+}
+
+.progress_container {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.timing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress_container input {
+
+    background-color: rgb(12, 216, 63);
+}
+
+#progress_bar {
+    width: 100%;
+
+}
+
+#current_time,
+#song_duration {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.action_buttons {
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #fd878d;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px #fff, 8px 8px 8px #ff5e66, -3px -3px 15px #f0ecec;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    height: 47px;
+    width: 47px;
+    /* background: transparent; */
+    border: 4px solid #ffffff;
+    border-radius: inherit;
+}
+
+i {
+    font-size: 30px;
+}
+
+.song_list {
+    width: 95vw;
+    height: 73vh;
+    padding: 40px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    /* it is for adding scrool bar for scrooling */
+    /* overflow-y:scroll; */
+    /* or */ 
+    overflow-y: auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.973), transparent), linear-gradient(to top left, rgb(255, 23, 23), transparent), linear-gradient(to top right, rgb(0, 185, 255), transparent);
+    background-blend-mode: screen;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.342);
+    display: none;
+}
+
+/*  */
+
+.song_list ul li {
+    list-style: none;
+    font-size: 17px;
+}
+
+
+/* Media query for screens 1000 pixels or smaller */
+@media only screen and (max-width: 500px) {
+    .song_list ul{
+        padding-left: 10vw;
+
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .song_list ul{
+        padding-left: 5vw;
+
+    }
+}
