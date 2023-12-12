@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var songListElement = document.getElementById("song_List");
     // Loop through the songList array and create list items dynamically
-    for (var i = 0; i < songList.length; i++) {
+    for (var i = 3; i < songList.length; i++) {
         var listItem = document.createElement("li");
         listItem.dataset.src = songList[i].song_file_name;
         listItem.textContent = songList[i].name;
